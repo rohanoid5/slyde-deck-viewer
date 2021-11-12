@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const HelloWorld = () => {
-    const message: string = 'Hello, World!';
+    const message: string = 'Hello, World!!!';
 
     return (
         <h1>

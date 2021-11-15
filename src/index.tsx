@@ -1,16 +1,18 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import Button from "@mui/material/Button";
-import { Container, createTheme, CssBaseline, Typography } from "@mui/material";
-import { ThemeProvider } from "@mui/system";
+import Button from '@mui/material/Button';
+import { Container, createTheme, CssBaseline } from '@mui/material';
+import { ThemeProvider } from '@mui/system';
 
-import { defaultThemeOptions } from "./theme/default";
+import { defaultThemeOptions } from './theme/default';
 
-import "./index.css";
+import Deck from './components/Deck';
+
+import './index.css';
 
 const HelloWorld = () => {
-  const message: string = "Hello, World!!!";
+  const message = 'Hello, World!!!';
 
   const theme = createTheme(defaultThemeOptions);
 
@@ -18,7 +20,8 @@ const HelloWorld = () => {
     <div className="main">
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Container sx={{ my: 8 }}>
+        <Deck />
+        <Container>
           <h1>{message}</h1>
           <Button variant="contained">Hello World</Button>
         </Container>
@@ -27,4 +30,4 @@ const HelloWorld = () => {
   );
 };
 
-ReactDOM.render(<HelloWorld />, document.getElementById("root"));
+ReactDOM.render(<HelloWorld />, document.getElementById('root'));

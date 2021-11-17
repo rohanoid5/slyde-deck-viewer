@@ -1,0 +1,21 @@
+[
+  {
+    "page": 1,
+    "contents": [
+      {
+        "variant": "h1",
+        "positionX": 483,
+        "positionY": 215,
+        "fontWeight": "500",
+        "value": "🚀 Micro-frontend"
+      },
+      {
+        "variant": "h1",
+        "positionX": 657,
+        "positionY": 327,
+        "fontWeight": "500",
+        "value": "Architecture"
+      }
+    ]
+  }
+]

@@ -10,9 +10,22 @@
   );
   position: relative;
 
-  .title {
+  .draggable {
     position: absolute;
-    top: 25%;
-    left: 25%;
+    cursor: grab;
+  }
+
+  .dragging {
+    cursor: grabbing;
+  }
+
+  .nav-btns {
+    position: absolute;
+    bottom: 0;
+    right: 64px;
+
+    button {
+      font-size: 4rem;
+    }
   }
 }
